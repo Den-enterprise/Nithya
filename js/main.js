@@ -103,6 +103,13 @@
         return false;
     });
 
+// Get the project tiles and adjust their height based on content
+const projectTiles = document.querySelectorAll('.project-tile');
+projectTiles.forEach(tile => {
+    const innerContent = tile.querySelector('.project-inner');
+    tile.style.height = innerContent.clientHeight + 'px';
+});
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -112,6 +119,5 @@
         loop: true,
         items: 1
     });
-    
 })(jQuery);
 

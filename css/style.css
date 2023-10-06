@@ -9991,7 +9991,6 @@ h6,
 }
 
 .project-tile {
-    flex: 0 0 calc(33.33% - 20px); /* Each tile takes 33.33% of the available space with some margin */
     background-color: #00ced1; /* Blue-Green tile background color */
     color: #fff; /* Text color */
     border-radius: 10px;
