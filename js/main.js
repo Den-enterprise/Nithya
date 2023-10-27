@@ -112,6 +112,23 @@
         loop: true,
         items: 1
     });
+
+
+        // Check the device orientation
+    function checkOrientation() {
+        if (window.innerHeight > window.innerWidth) {
+            // Device is in portrait mode
+            document.getElementById("orientation-overlay").style.display = "block";
+        } else {
+            // Device is in landscape mode
+            document.getElementById("orientation-overlay").style.display = "none";
+        }
+    }
+
+    // Check orientation when the page loads and when the device is resized
+    window.addEventListener("load", checkOrientation);
+    window.addEventListener("resize", checkOrientation);
+
     
 })(jQuery);
 
