@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling for the tile container */
+        .custom-tile-container {
+            position: relative;
+            width: 100%; /* Occupy the full width of the container */
+            overflow: hidden;
+            cursor: pointer;
+            margin-bottom: 20px; /* Add some spacing between tiles */
+        }
+
+        /* Style for the portrait picture */
+        .custom-tile-image {
+            width: 100%;
+            height: auto;
+            border: 8px solid white; /* Adjust the bezel size as needed */
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Styling for the caption */
+        .custom-tile-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 255, 255, 0.8); /* Aqua blue background */
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #00ffff; /* Aqua blue text color */
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Hover effect */
+        .custom-tile-container:hover .custom-tile-image {
+            transform: scale(1.1); /* Adjust the scaling factor as needed */
+        }
+
+        /* Hover effect for the caption */
+        .custom-tile-container:hover .custom-tile-caption {
+            background-color: rgba(0, 255, 255, 1); /* Adjust the final opacity as needed */
+        }
+
+        /* Media query for laptops and larger screens */
+        @media (min-width: 768px) {
+            .custom-tile-container {
+                width: calc(33.33% - 20px); /* Set width for three tiles in a row with spacing */
+                margin-right: 20px; /* Add spacing between tiles */
+                float: left;
+            }
+
+            .custom-tile-container:nth-child(3n) {
+                margin-right: 0; /* Remove right margin for the last tile in a row */
+            }
+        }
+
+        /* Basic styling for the header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #333; /* Adjust the background color as needed */
+            color: white; /* Text color for the header */
+        }
+
+        /* Styling for the "AS" in the header */
+        .highlighted-text {
+            color: black; /* Black color for the "AS" text */
+        }
+
+        /* Styling for the navigation button */
+        .navigation-button {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green background color for the button */
+            color: white; /* Text color for the button */
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with text and navigation button -->
+    <header>
+        <div>
+            <span>Nithya </span><span class="highlighted-text">AS</span>
+        </div>
+        <a href="home.html" class="navigation-button">Home</a>
+    </header>
+
+    <!-- Tile container with picture and caption -->
+    <div class="custom-tile-container" onclick="window.location.href='another_page.html'">
+        <img src="portrait.jpg" alt="Portrait" class="custom-tile-image">
+        <div class="custom-tile-caption">
+            <p>Caption Text</p>
+        </div>
+    </div>
+
+    <!-- Add more tile containers as needed -->
+
+</body>
+</html>
+
