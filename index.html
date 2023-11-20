@@ -525,121 +525,227 @@
         </a>
     </div>
 
-    <!-------------------------------------------------------Bookss------------------------------------------------------------->
+    <!-------------------------------------------------------Bookss-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Library</title>
+    <style>
+        /* Your existing styles */
+        .position-relative {
+            position: relative;
+        }
+        .d-flex {
+            display: flex;
+        }
+        .align-items-center {
+            align-items: center;
+        }
+        .justify-content-center {
+            justify-content: center;
+        }
+        .display-1 {
+            font-size: 2.5rem; /* Adjust the font size as needed */
+            margin: 0; /* Remove default margin */
+        }
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-primary {
+            color: #007bff; /* Adjust the color as needed */
+        }
+        .position-absolute {
+            position: absolute;
+        }
 
+        /* Your existing grid styles */
+        .book-container {
+            display: grid;
+            gap: 10px;
+        }
+
+        @media (min-width: 576px) {
+            .book-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .book-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="position-relative d-flex align-items-center justify-content-center">
         <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Library</h1>
         <h1 class="position-absolute text-uppercase text-primary">The Books I Have Read</h1>
-    </div>    
-    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+    </div>
+
+    <div class="book-container">
+        <!-- Book 1 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
             <img src="img/books/book1.jpg" alt="Book 1">
             <!-- Other book details can be added here -->
         </div>
+        
+        <!-- Book 2 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book2.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book3.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book4.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book5.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book6.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book7.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book8.jpg" alt="Book 1">
+            <img src="img/books/book2.jpeg" alt="Book 2">
             <!-- Other book details can be added here -->
         </div>
 
+        <!-- Book 3 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book9.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book10.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book11.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book12.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book13.jpg" alt="Book 1">
+            <img src="img/books/book3.jpg" alt="Book 3">
             <!-- Other book details can be added here -->
         </div>
 
+        <!-- Book 4 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book14.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book15.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book16.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book17.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book19.jpg" alt="Book 1">
+            <img src="img/books/book4.jpeg" alt="Book 4">
             <!-- Other book details can be added here -->
         </div>
 
+        <!-- Book 5 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book20.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book21.jpeg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book22.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book23.jpg" alt="Book 1">
-            <!-- Other book details can be added here -->
-        </div>
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book24.jpg" alt="Book 1">
+            <img src="img/books/book5.jpeg" alt="Book 5">
             <!-- Other book details can be added here -->
         </div>
 
+        <!-- Book 6 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            
-            <img src="img/books/book18.webp" alt="Book 1">
+            <img src="img/books/book6.jpg" alt="Book 6">
             <!-- Other book details can be added here -->
         </div>
+
+        <!-- Book 7 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book7.jpeg" alt="Book 7">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 8 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book8.jpg" alt="Book 8">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 9 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book9.jpg" alt="Book 9">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 10 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book10.jpeg" alt="Book 10">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 11 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book11.jpeg" alt="Book 11">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 12 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book12.jpg" alt="Book 12">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 13 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book13.jpg" alt="Book 13">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 14 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book14.jpg" alt="Book 14">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 15 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book15.jpg" alt="Book 15">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 16 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book16.jpeg" alt="Book 16">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 17 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book17.jpg" alt="Book 17">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 18 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book18.webp" alt="Book 18">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 19 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book19.jpg" alt="Book 19">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 20 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book20.jpg" alt="Book 20">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 21 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book21.jpeg" alt="Book 21">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 22 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book22.jpg" alt="Book 22">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 23 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book23.jpg" alt="Book 23">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Book 24 -->
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="img/books/book24.jpg" alt="Book 24">
+            <!-- Other book details can be added here -->
+        </div>
+
+        <!-- Continue adding more books as needed -->
+
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
             <h1>More Books coming in the list!</h1>
             <!-- Other book details can be added here -->
         </div>
     </div>
+</body>
+</html>
 
+
+
+    <!------------------------------------------------------------->
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -939,19 +1045,19 @@ Nithya is described as a friendly, caring, and optimistic individual who tackles
 
 <div class="video-grid">
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/CBZfaSKSclQ"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CBZfaSKSclQ?si=q7Fj2DaklsPUQBC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/csMiQHVzJAg"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/csMiQHVzJAg?si=MCbi5LVRnjvtDNTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/V7eNk36N1Ho"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V7eNk36N1Ho?si=vagQ_p6O1KYVBMiF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/vIlz-e7TMrU"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vIlz-e7TMrU?si=iTkZBLAZUEpR-N-l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/your-video-id-5"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/drfMaRZZ1so?si=AIhL_rftLEApDfbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </div>
 
