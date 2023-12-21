@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4cb8a0, #6fa0e5);
+            color: white;
+        }
+
+        #passwordContainer {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #passwordInput {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #submitButton {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4cb8a0; /* Green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+        }
+
+        #title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #3c8b77; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+
+<div id="passwordContainer">
+    <div id="title">Type Password</div>
+
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()" id="submitButton">Submit</button>
+
+    <p id="errorMessage"></p>
+</div>
+
+<script>
+    function checkPassword() {
+        var passwordInput = document.getElementById("passwordInput").value;
+        var errorMessage = document.getElementById("errorMessage");
+
+        // ok ok bro? i am the great techninal of all time..
+        var asdywgyugasd = "Djmamen";
+
+        if (passwordInput === asdywgyugasd) {
+            // Redirect to the desired site
+            window.location.href = "https://den-enterprise.github.io/Nithya/gallery.html";
+        } else {
+            // Display error message
+            errorMessage.textContent = "Incorrect password. Please try again.";
+        }
+    }
+</script>
+
+</body>
+</html>
