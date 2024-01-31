@@ -617,173 +617,168 @@ Notably, she co-founded Evora, a company specializing in marketing and event man
             position: absolute;
         }
 
-        /* Your existing grid styles */
+
+    .book-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(5, minmax(150px, 1fr)); /* Adjust the minimum and maximum width as needed */
+    }
+
+    .book-container img {
+        max-width: 100%; /* Ensure images don't exceed their container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    @media (max-width: 576px) {
+        /* Adjust grid layout for smaller screens */
         .book-container {
-            display: grid;
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust as needed */
         }
-
-        @media (min-width: 576px) {
-            .book-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 992px) {
-            .book-container {
-                grid-template-columns: repeat(5, 1fr);
-            }
-        }
+    }
     </style>
 </head>
 <body>
     <div class="position-relative d-flex align-items-center justify-content-center">
        <br><br><br>
-        <h1 class="position-absolute text-uppercase text-primary">The Books I Have Read</h1><br><br><br>
+        <h1 class="position-absolute text-uppercase text-primary">The Books I Have Read</h1><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
     <div class="book-container">
         <!-- Book 1 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book1.jpg" alt="Book 1">
+            <img src="img/books/book (1).jpg" alt="Book 1">
             <!-- Other book details can be added here -->
         </div>
         
         <!-- Book 2 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book2.jpeg" alt="Book 2">
+            <img src="img/books/book (2).jpg" alt="Book 2">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 3 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book3.jpg" alt="Book 3">
+            <img src="img/books/book (3).jpg" alt="Book 3">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 4 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book4.jpeg" alt="Book 4">
+            <img src="img/books/book (4).jpg" alt="Book 4">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 5 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book5.jpeg" alt="Book 5">
+            <img src="img/books/book (5).jpg" alt="Book 5">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 6 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book6.jpg" alt="Book 6">
+            <img src="img/books/book (6).jpg" alt="Book 6">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 7 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book7.jpeg" alt="Book 7">
+            <img src="img/books/book (7).jpg" alt="Book 7">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 8 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book8.jpg" alt="Book 8">
+            <img src="img/books/book (8).jpg" alt="Book 8">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 9 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book9.jpg" alt="Book 9">
+            <img src="img/books/book (9).jpg" alt="Book 9">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 10 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book10.jpeg" alt="Book 10">
+            <img src="img/books/book (10).jpg" alt="Book 10">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 11 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book11.jpeg" alt="Book 11">
+            <img src="img/books/book (11).jpg" alt="Book 11">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 12 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book12.jpg" alt="Book 12">
+            <img src="img/books/book (12).jpg" alt="Book 12">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 13 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book13.jpg" alt="Book 13">
+            <img src="img/books/book (13).jpg" alt="Book 13">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 14 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book14.jpg" alt="Book 14">
+            <img src="img/books/book (14).jpg" alt="Book 14">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 15 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book15.jpg" alt="Book 15">
+            <img src="img/books/book (15).jpg" alt="Book 15">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 16 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book16.jpeg" alt="Book 16">
+            <img src="img/books/book (16).jpg" alt="Book 16">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 17 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book17.jpg" alt="Book 17">
+            <img src="img/books/book (17).jpg" alt="Book 17">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 18 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book18.webp" alt="Book 18">
+            <img src="img/books/book (18).jpg" alt="Book 18">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 19 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book19.jpg" alt="Book 19">
-            <!-- Other book details can be added here -->
-        </div>
-
-        <!-- Book 20 -->
-        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book20.jpg" alt="Book 20">
+            <img src="img/books/book (19).jpg" alt="Book 19">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 21 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book21.jpeg" alt="Book 21">
+            <img src="img/books/book (20).jpg" alt="Book 21">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 22 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book22.jpg" alt="Book 22">
+            <img src="img/books/book (21).jpg" alt="Book 22">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 23 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book23.jpg" alt="Book 23">
+            <img src="img/books/book (22).jpg" alt="Book 23">
             <!-- Other book details can be added here -->
         </div>
 
         <!-- Book 24 -->
         <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
-            <img src="img/books/book24.jpg" alt="Book 24">
+            <img src="img/books/book (23).jpg" alt="Book 24">
             <!-- Other book details can be added here -->
         </div>
 
@@ -801,7 +796,7 @@ Notably, she co-founded Evora, a company specializing in marketing and event man
 
     <!------------------------------------------------------------->
     <script>
-        let slideIndex = 1;
+        let slideIndex = 1;0
         showSlides(slideIndex);
 
         function plusSlides(n) {
@@ -935,12 +930,6 @@ Nithya is described as a friendly, caring, and optimistic individual who tackles
                             <h5 class="font-weight-bold m-0">Denver John Demis</h5>
                             <span>Friend</span>
                         </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
                         </div>
                     </div>
                 </div>
@@ -1111,7 +1100,7 @@ Nithya is described as a friendly, caring, and optimistic individual who tackles
     <iframe width="560" height="315" src="https://www.youtube.com/embed/vIlz-e7TMrU?si=iTkZBLAZUEpR-N-l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="video-card">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/drfMaRZZ1so?si=AIhL_rftLEApDfbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/drfMaRZZ1so?si=AIhL_rftLEApDfbM" title="YouTube video player" frameborder="128" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </div>
 
