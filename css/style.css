@@ -10158,3 +10158,56 @@ iframe {
 .initiative-btn:hover {
   background-color: #d46b17;
 }
+
+@media (max-width: 380px) {
+.drawing-canvas {
+    width: 746px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+}
+@media (max-width: 889px) {
+.slideshow-container {
+  width: 672px !important;
+}
+
+.slideshow-container {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+.book-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, minmax(150px, 1fr)) !important;
+}
+}
+@media (min-width: 889px) {
+            .slideshow-container {
+                width: 800px;
+                height: 500px;
+                position: relative;
+                margin: 0 auto;
+            }
+}
+@media (max-width: 760px) {
+    .slideshow-container {
+        width: 571px !important;
+    }
+}
+@media (max-width: 550px) {
+    .slideshow-container {
+        height: 309px !important;
+        width: 440px !important;
+    }
+}@media (max-width: 760px) {
+    .slideshow-container {
+        width: 571px !important;
+    }
+}@media (max-width: 760px) {
+    .slideshow-container {
+        width: 571px !important;
+    }
+}
